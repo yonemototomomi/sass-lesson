@@ -1,0 +1,34 @@
+@use 'variable';
+@use 'mixin';
+
+.header {
+  height: variable.$header-height;
+  width: variable.$header-width;
+  background-color: variable.$navy;
+  color: variable.$white;
+}
+
+.container {
+  @include mixin.flex-row();
+}
+
+.sidebar {
+  height: variable.$sidebar-height;
+  width: variable.$sidebar-width;
+  background-color: variable.$green;
+  color: variable.$white;
+}
+
+.main {
+  height: variable.$main-height;
+  width: variable.$main-width;
+  background-color: variable.$red;
+  color: variable.$white;
+}
+
+.footer {
+  height: variable.$footer-height;
+  width: variable.$footer-width;
+  background-color: variable.$brown;
+  color: variable.$white;
+}
