@@ -55,11 +55,14 @@
 }
 
 /* Sass */
+$maxWidth: 1000px;
+$brandColor: #cd6799;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1000px;
+  max-width: $maxWidth;
   margin: 0 auto;
   padding: 10px 0;
 
@@ -94,7 +97,7 @@
     }
 
     &:hover {
-      color: #cd6799;
+      color: $brandColor;
     }
   }
 }
