@@ -37,6 +37,21 @@
 .main {
   @include mixin.framesize(250px, 250px);
   background-color: variable.$red;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  // padding: 40px 0 0 40px;
+  box-sizing: border-box;
+
+  &__inner {
+    @include mixin.maininnerbox();
+    @each $name, $color in variable.$box-colors {
+      .mainbox-#{"" + $name} {
+        @include mixin.mainbox($color);
+      }
+    }
+  }
 }
 
 .footer {
