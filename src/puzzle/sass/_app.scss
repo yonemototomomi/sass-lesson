@@ -11,22 +11,16 @@
 }
 
 .sidebar {
-  height: variable.$sidebar-height;
-  width: variable.$sidebar-width;
+  @include mixin.framesize(250px, 150px);
   background-color: variable.$green;
-  color: variable.$white;
 }
 
 .main {
-  height: variable.$main-height;
-  width: variable.$main-width;
+  @include mixin.framesize(250px, 250px);
   background-color: variable.$red;
-  color: variable.$white;
 }
 
 .footer {
-  height: variable.$footer-height;
-  width: variable.$footer-width;
+  @include mixin.framesize(100px, 400px);
   background-color: variable.$brown;
-  color: variable.$white;
 }
