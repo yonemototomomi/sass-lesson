@@ -102,6 +102,19 @@ $brandColor: #cd6799;
   }
 }
 
+@mixin btn($color) { // 引数を$colorにする
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: $color; // 値に引数を設置 
+  text: {
+    decoration: none;
+    align: center;
+  }
+}
+
 .footer {
   padding: 70px 0;
 
@@ -117,6 +130,12 @@ $brandColor: #cd6799;
         &:nth-child(n+4) {
           margin-top: 20px;
         }
+      }
+    }
+    
+    &__btn {
+      &.is-facebook {
+        @include btn(#4668b3); // 引数にカラーコードを入れる
       }
     }
   }
