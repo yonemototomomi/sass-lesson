@@ -2,10 +2,8 @@
 @use 'mixin';
 
 .header {
-  height: variable.$header-height;
-  width: variable.$header-width;
+  @include mixin.framesize(100px, 400px);
   background-color: variable.$navy;
-  color: variable.$white;
 }
 
 .container {
