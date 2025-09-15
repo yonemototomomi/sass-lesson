@@ -6,6 +6,15 @@ $navy: #141f40;
 $green: #80bfa8;
 $red: #8c2727;
 $brown: #d98d30;
+$purple: #a9004b;
+$orange: #ff863f;
+$blue:#0000ff;
+
+$box-colors: (
+  purple: $purple,
+  orange: $orange,
+  blue:   $blue
+);
 
 $header-height: 100px;
 $header-width: 400px;
