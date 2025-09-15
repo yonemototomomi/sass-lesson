@@ -1,3 +1,9 @@
+@use 'variable';
+
+.test {
+  color: variable.$color-text;
+}
+
 .inner {
   width: 100%;
   max-width: 1000px;
@@ -13,46 +19,46 @@
 
 /* ↓ここに処理を書く↓ */
 /* CSS */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1000px;
-  margin: 0 auto;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 1000px;
+//   margin: 0 auto;
+//   padding: 10px 0;
+//   border-bottom: 1px solid #eee;
+// }
 
-.header h1 {
-  text-align: left; 
-}
+// .header h1 {
+//   text-align: left; 
+// }
 
-.header__logo {
-  width: 80px;
-}
+// .header__logo {
+//   width: 80px;
+// }
 
-.header__list {
-  display: flex;
-}
+// .header__list {
+//   display: flex;
+// }
 
-.header__list > li {
-  margin-left: 30px;
-}
+// .header__list > li {
+//   margin-left: 30px;
+// }
 
-.header__list > li:first-child {
-  margin-left: 0;
-}
+// .header__list > li:first-child {
+//   margin-left: 0;
+// }
 
-.header__list__link {
-  text-decoration: none;
-  color: #666;
-  font-size: 16px;
-  font-weight: bold;
-}
+// .header__list__link {
+//   text-decoration: none;
+//   color: #666;
+//   font-size: 16px;
+//   font-weight: bold;
+// }
 
-.header__list__link:hover {
-  color: #cd6799;
-}
+// .header__list__link:hover {
+//   color: #cd6799;
+// }
 
 /* Sass */
 $maxWidth: 1000px;
