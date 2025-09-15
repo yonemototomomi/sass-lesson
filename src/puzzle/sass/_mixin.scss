@@ -21,3 +21,17 @@
   display: flex;
   background-color: $color;
 }
+
+// mainboxの周りを囲むbox
+@mixin maininnerbox() {
+  background-color: white;
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+}
+
+// mainboxの各box
+@mixin mainbox($color, $height:40px, $width:140px) {
+  @include framesize($height, $width);
+  background-color: $color;
+}
