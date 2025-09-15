@@ -1,5 +1,15 @@
+@use 'variable';
+
+// sidebarとmainを横並び
 @mixin flex-row($justify: flex-start, $align: stretch) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
+}
+
+// 全体の枠組みのサイズ
+@mixin framesize($height, $width) {
+  height: $height;
+  width: $width;
+  color: variable.$white;
 }
