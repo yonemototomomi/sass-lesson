@@ -4,6 +4,25 @@
 .header {
   @include mixin.framesize(100px, 400px);
   background-color: variable.$navy;
+  position: relative;
+
+  &__inner{
+    position: absolute;
+    background-color: variable.$white;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    @include mixin.framesize(60px, 160px);
+    top:20px;
+    right:20px;
+      .headerbox {
+        @each $name, $color in variable.$box-colors {
+          &-#{"" + $name} {
+            @include mixin.headerbox($color);
+          }
+        }
+      }
+  }
 }
 
 .container {
