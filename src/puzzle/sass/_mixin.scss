@@ -1,0 +1,37 @@
+@use 'variable';
+
+// sidebarとmainを横並び
+@mixin flex-row($justify: flex-start, $align: stretch) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// 全体の枠組みのサイズ
+@mixin framesize($height, $width) {
+  height: $height;
+  width: $width;
+  color: variable.$white;
+}
+
+// headerの各box
+@mixin headerbox($color) {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  background-color: $color;
+}
+
+// mainboxの周りを囲むbox
+@mixin maininnerbox() {
+  background-color: white;
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+}
+
+// mainboxの各box
+@mixin mainbox($color, $height:40px, $width:140px) {
+  @include framesize($height, $width);
+  background-color: $color;
+}
